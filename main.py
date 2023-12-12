@@ -1,8 +1,9 @@
 import cohere
 import textwrap
+import os
 
 
-api_key = 'SLcKOzefzABDgo4fUp4QnVFpOZZPdnMcflbFOasu'
+api_key = os.environ.get('COHERE_API_KEY')
 co = cohere.Client(api_key)
 
 text ="""It's an exciting day for the development community. Cohere's state-of-the-art language AI is now available through Amazon SageMaker. This makes it easier for developers to deploy Cohere's pre-trained generation language model to Amazon SageMaker, an end-to-end machine learning (ML) service. Developers, data scientists, and business analysts use Amazon SageMaker to build, train, and deploy ML models quickly and easily using its fully managed infrastructure, tools, and workflows.
